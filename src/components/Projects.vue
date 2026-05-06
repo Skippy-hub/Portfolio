@@ -1,5 +1,8 @@
 <script setup>
     import ProjectCard from './ProjectCard.vue';
+    import DessertsImg from '../assets/img/Desserts_img.jpg';
+    import ArtImg from '../assets/img/Art_img.jpg';
+    import BlankoImg from '../assets/img/Blanko_img.jpg';
 </script>
 
 <template>
@@ -8,19 +11,19 @@
             <h2 class="projects__title">My <span class="bold">Projects</span></h2>
             <div class="projects__cards">
                 <ProjectCard
-                    image = "/src/assets/img/Desserts_img.jpg"
+                    :image = "DessertsImg"
                     title = "Desserts"
                     description = "An interactive dessert menu with cart functionality. Users can add and remove items, calculate total cost, and place an order. Built using vanilla HTML, CSS, and JavaScript."
                     link = "https://skippy-hub.github.io/Frontend-Mentor/"
                 />
                 <ProjectCard
-                    image = "/src/assets/img/Art_img.jpg"
+                    :image = "ArtImg"
                     title = "Art"
                     description = "A one-page landing page with a product catalog and filtering by author country. Implemented interactive filtering and responsive layout. Built with Vue.js, HTML, SCSS, and JavaScript."
                     link = "https://art-sable-alpha.vercel.app/"
                 />
                 <ProjectCard
-                    image = "/src/assets/img/Blanko_img.jpg"
+                    :image = "BlankoImg"
                     title = "Blanko"
                     description = "One-page responsive landing page with company information and contact section. Adapted for desktop and mobile devices. Built using Vue.js, HTML, SCSS, and JavaScript."
                     link = "https://blanko-gamma.vercel.app/"
